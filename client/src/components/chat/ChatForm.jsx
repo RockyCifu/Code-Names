@@ -13,12 +13,19 @@ const ChatForm = ({ socket, updateMessages }) => {
   const { values, handleChange, handleSubmit } = useForm(initialState, submitHandler)
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="input-group">
-        <label htmlFor="message">Message:</label>
-        <input type="text" name="message" value={values.message} onChange={handleChange} />
+    <form className="chat-form" onSubmit={handleSubmit}>
+      <div className="chat-input-container">
+        <input
+          type="text"
+          name="message"
+          value={values.message}
+          onChange={handleChange}
+          placeholder="Type Message ..."
+        />
+        <button>
+          <img src="send-message.png" alt="Send Button" />
+        </button>
       </div>
-      <input type="submit" value="Send" />
     </form>
   )
 }
