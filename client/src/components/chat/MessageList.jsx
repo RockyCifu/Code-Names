@@ -1,6 +1,6 @@
 const MessageList = ({ messages }) => {
   const messageElements = messages.map(({ message, received }, index) => (
-    <p style={{ textAlign: received ? "left" : "right" }} key={index}>
+    <p className={received ? "server-message" : "my-message"} key={index}>
       {message}
     </p>
   ))

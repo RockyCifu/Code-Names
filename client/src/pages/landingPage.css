@@ -1,0 +1,109 @@
+.landing-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: rgba(58, 11, 58, 0.45);
+}
+
+.landing-page .title-block {
+  margin-top: -0.5rem;
+}
+
+.landing-page .title-block h1 {
+  color: #eee;
+  margin: 0 auto;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.landing-page__container {
+  width: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  position: relative;
+  color: #eee;
+}
+
+.landing-page__image {
+  width: 425px;
+  height: 340px;
+  margin-left: 2rem;
+  background-image: url("../assets/main-agent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.landing-page__content {
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.landing-page__content h2 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.landing-page__content h2,
+h3,
+p,
+input,
+select {
+  margin-bottom: 0.75rem;
+}
+
+.landing-page__content input,
+select {
+  width: 250px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid #bbb;
+  padding: 0.375rem;
+  color: #444;
+}
+
+.landing-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.landing-input-container input[type="submit"] {
+  width: 90px;
+  height: 40px;
+  margin-left: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  color: #eee;
+  background: rgb(129, 79, 113);
+  background: linear-gradient(
+    45deg,
+    rgba(129, 79, 113, 1) 0%,
+    rgba(178, 51, 102, 1) 10%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(88, 124, 158, 1) 90%,
+    rgba(82, 73, 106, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.landing-input-container input::placeholder {
+  color: #444;
+}
+
+.error {
+  color: red;
+}

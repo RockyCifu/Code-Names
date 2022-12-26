@@ -5,7 +5,7 @@ const useSocket = (port) => {
   const [socket, setSocket] = useState(null)
 
   useEffect(() => {
-    setSocket(io(port))
+    if (!socket) setSocket(io(port))
   }, [])
 
   return { socket }
